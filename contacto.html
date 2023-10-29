@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Galeria</title>
+</head>
+
+<body>
+    <!--Encabezado-->
+    <header>
+        <h1 class="nombre-sitio">Tienda <span>Muebles</span></h1>
+    </header>
+    <!--Navegacion-->
+    <div class="contenedor-navegacion">
+        <nav class="navegacion-primaria contenedor">
+            <a href="./index.html">Inicio</a>
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="./tienda.html">Tienda</a>
+            <a href="./blog.html">Blog</a>
+            <a href="#">Galeria</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </div>
+    <main class="contenido-principal contenedor">
+        <h2 class="text-center">Contacto</h2>
+        <form action="" class="formulario">
+            <fieldset>
+                <legend>Tus datos</legend>
+                <!--Titulo de los campos-->
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input class="input" id="nombre" type="text" placeholder="Coloca tu nombre">
+                </div>
+
+                <div class="campo">
+                    <!--Con esto mis campos tendran display block-->
+                    <label for="asunto">Asunto</label>
+                    <input class="input" id="asunto" type="text" placeholder="Coloca tu asunto">
+                </div>
+
+                <div class="campo">
+                    <!--Con esto mis campos tendran display block-->
+                    <label for="email">Email</label>
+                    <input class="input" id="email" type="email" placeholder="Coloca tu email">
+                </div>
+
+                <div class="campo">
+                    <!--Con esto mis campos tendran display block-->
+                    <label for="tel">Telefono</label>
+                    <input class="input" id="tel" type="tel" placeholder="Coloca tu telefono">
+                </div>
+
+                <div class="campo">
+                    <!--Con esto mis campos tendran display block-->
+                    <label for="fecha">Fecha</label>
+                    <input class="input" id="fecha" type="date" placeholder="Coloca la fecha">
+                </div>
+
+                <div class="campo">
+                    <!--Con esto mis campos tendran display block-->
+                    <label for="mensaje">Mensaje</label>
+                    <textarea class="input" name="" id="mensaje" cols="30" rows="20"></textarea>
+                </div>
+
+            </fieldset>
+            <fieldset>
+                <legend>Pais</legend>
+
+                <div class="campo">
+                    <label for="pais">Pais</label>
+                    <select class="input" name="" id="pais">
+                        <option value="">Seleccione</option>
+                        <option value="">Argentina</option>
+                        <option value="">Chile</option>
+                        <option value="">Brasil</option>
+                        <option value="">Uruguay</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <!--Agrupar campos relacionados-->
+                <legend>Tus datos</legend>
+                <!--Titulo de los campos-->
+
+                <div class="campo">
+                    <!--Con esto mis campos tendran display block-->
+                    <label for="cliente">Cliente</label>
+                    <input id="cliente" type="radio" name="cliente">
+                </div>
+
+                <div class="campo">
+                    <label for="proveedor">Proveedor</label>
+                    <input id="proveedor" type="radio" name="proveedor">
+                </div>
+
+                <div class="campo">
+                    <label for="proveedor">Categoria de interes</label>
+                    <input class="input" list="categorias" name="categorias">
+                    <datalist id="categorias">
+                        <option value="Cocina">
+                        <option value="Cocina">
+                        <option value="Cocina">
+                        <option value="Cocina">
+                    </datalist>
+                </div>
+
+            </fieldset>
+            <input class="boton" type="submit" value="Enviar formulario">
+        </form>
+
+    </main>
+    <!--Pie de pagina-->
+    <footer>
+        <div class="pie-pagina-grid">
+            <div class="pie-pagina-categoria contenedor">
+                <h3>Categoria</h3>
+                <nav class="footer-menu">
+                    <a href="">Cocina</a>
+                    <a href="">Oficina</a>
+                    <a href="">Jardin</a>
+                    <a href="">Cocheria</a>
+                    <a href="">Dormitorio</a>
+                </nav>
+            </div>
+            <div class="pie-pagina-categoria">
+                <h3>Sobre nosotros</h3>
+                <nav class="footer-menu">
+                    <a href="">Nuestra historia</a>
+                    <a href="">Mision,vision y valores</a>
+                    <a href="">Carreras</a>
+                    <a href="">Politicas de privacidad</a>
+                    <a href="">Terminos del servicio</a>
+                </nav>
+            </div>
+            <div class="pie-pagina-categoria">
+                <h3>Soporte</h3>
+                <nav class="footer-menu">
+                    <a href="">Preguntas frecuentes</a>
+                    <a href="">Confianza y seguridad</a>
+                    <a href="">Ayuda en linea</a>
+                </nav>
+            </div>
+        </div>
+        <p class="copiryght">Todos los derechos reservados,TiendaMuebles</p>
+    </footer>
+</body>
+
+</html>
